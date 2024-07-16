@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailSuperHeroActivity">
+
+    <ImageView
+        android:id="@+id/ivImageSuperhero"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="270dp"
+        android:layout_marginBottom="-30dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!--            Titulo-->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                tools:text="Nombre SuperHeroe" />
+
+            <!--            Nombre real-->
+            <TextView
+                android:id="@+id/tvnNameReal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="full name" />
+
+            <!--            Alineamiento-->
+            <TextView
+                android:id="@+id/tvAlignement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="alignament" />
+
+            <!--            Grafico barras-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/vInteligence"
+                    style="@style/titleStatsView" />
+
+                <View
+                    android:id="@+id/vStrength"
+                    style="@style/titleStatsView" />
+
+                <View
+                    android:id="@+id/vSpeed"
+                    style="@style/titleStatsView" />
+
+                <View
+                    android:id="@+id/vDurability"
+                    style="@style/titleStatsView" />
+
+                <View
+                    android:id="@+id/vPower"
+                    style="@style/titleStatsView" />
+
+                <View
+                    android:id="@+id/vCombat"
+                    style="@style/titleStatsView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvIntelligence"
+                    style="@style/titleStats"
+                    android:text="Int" />
+
+                <TextView
+                    android:id="@+id/tvStrength"
+                    style="@style/titleStats"
+                    android:text="Str" />
+
+                <TextView
+                    android:id="@+id/tvSpeed"
+                    style="@style/titleStats"
+                    android:text="Spd" />
+
+                <TextView
+                    android:id="@+id/tvDurability"
+                    style="@style/titleStats"
+                    android:text="Dur" />
+
+                <TextView
+                    android:id="@+id/tvPower"
+                    style="@style/titleStats"
+                    android:text="Pow" />
+
+                <TextView
+                    android:id="@+id/tvCombat"
+                    style="@style/titleStats"
+                    android:text="Comb" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
